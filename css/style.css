@@ -56,10 +56,11 @@ body {
   margin: 10px;
   justify-content: center;
   text-align: center;
+  align-items: center;
   padding: 0px;
 }
 .cards .c img {
-  max-height: 100%;
+  height: 100%;
   position: relative;
   left: -0.08rem;
   top: 0.1px;
@@ -72,7 +73,6 @@ body {
 .cards .c h2 {
   color: #fa824c;
   grid-row: 5/6;
-  align-items: center;
 }
 .cards .c p {
   grid-row: 6/8;

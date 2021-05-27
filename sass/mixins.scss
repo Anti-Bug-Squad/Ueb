@@ -9,10 +9,11 @@
     margin: 10px;
     justify-content: center;
     text-align: center;
+    align-items: center;
     padding: 0px;
 
     img{
-        max-height: 100%;
+        height: 100%;
         position: relative;
         left:-0.08rem;
         top:0.1px;
@@ -26,7 +27,6 @@
     h2{
         color: #fa824c;
         grid-row: 5/6;
-        align-items: center;
     }
 
     p{
