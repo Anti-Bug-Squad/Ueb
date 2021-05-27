@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  border: 0px;
+}
+
+.nav {
+  background: black;
+  height: 10vh;
+}
+
+.boxes {
+  background: brown;
+  height: 25vh;
+}
+
+.cards {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 20rem);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.cards #card1 {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  border: 5px green;
+  border-radius: 5%;
+  border-style: solid;
+  height: 25rem;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.cards #card1 img {
+  padding: 0px;
+  margin: 0px;
+  width: 18.1rem;
+  border-radius: 5%;
+  grid-row: 1/4;
+}
+.cards #card1 h2 {
+  grid-row: 5/6;
+}
+.cards #card1 p {
+  grid-row: 6/8;
+  border-radius: 5%;
+  background: white;
+}
+.cards #card1 button {
+  grid-row: 8/10;
+  border-radius: 5%;
+  background: yellow;
+}
+.cards #card2 {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  border: 5px green;
+  border-radius: 5%;
+  border-style: solid;
+  height: 25rem;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.cards #card2 img {
+  padding: 0px;
+  margin: 0px;
+  width: 18.1rem;
+  border-radius: 5%;
+  grid-row: 1/4;
+}
+.cards #card2 h2 {
+  grid-row: 5/6;
+}
+.cards #card2 p {
+  grid-row: 6/8;
+  border-radius: 5%;
+  background: white;
+}
+.cards #card2 button {
+  grid-row: 8/10;
+  border-radius: 5%;
+  background: yellow;
+}
+.cards #card3 {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  border: 5px green;
+  border-radius: 5%;
+  border-style: solid;
+  height: 25rem;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.cards #card3 img {
+  padding: 0px;
+  margin: 0px;
+  width: 18.1rem;
+  border-radius: 5%;
+  grid-row: 1/4;
+}
+.cards #card3 h2 {
+  grid-row: 5/6;
+}
+.cards #card3 p {
+  grid-row: 6/8;
+  border-radius: 5%;
+  background: white;
+}
+.cards #card3 button {
+  grid-row: 8/10;
+  border-radius: 5%;
+  background: yellow;
+}
+.cards #card4 {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  border: 5px green;
+  border-radius: 5%;
+  border-style: solid;
+  height: 25rem;
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.cards #card4 img {
+  padding: 0px;
+  margin: 0px;
+  width: 18.1rem;
+  border-radius: 5%;
+  grid-row: 1/4;
+}
+.cards #card4 h2 {
+  grid-row: 5/6;
+}
+.cards #card4 p {
+  grid-row: 6/8;
+  border-radius: 5%;
+  background: white;
+}
+.cards #card4 button {
+  grid-row: 8/10;
+  border-radius: 5%;
+  background: yellow;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: gray;
+  height: 5vh;
+}
