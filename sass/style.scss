@@ -1,0 +1,46 @@
+@import 'mixins.scss';
+*{
+    margin: 0px;
+    border: 0px;
+}
+.nav{
+    background:black;
+    height:10vh;
+}
+
+.boxes{
+    background: brown;
+    height: 25vh;
+}
+
+.cards{
+
+    height:60vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    #card1{
+        @include card;
+    }
+    #card2{
+        @include card;
+    }
+    #card3{
+        @include card;
+    }
+    #card4{
+        @include card;
+    }
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: gray;
+    height: 5vh;
+
+}
