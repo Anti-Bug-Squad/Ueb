@@ -14,7 +14,7 @@
 }
 
 .cards {
-  height: 60vh;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
   grid-gap: 20px;
@@ -40,6 +40,7 @@
   grid-row: 1/4;
 }
 .cards #card1 h2 {
+  color: orange;
   grid-row: 5/6;
 }
 .cards #card1 p {
@@ -50,7 +51,7 @@
 .cards #card1 button {
   grid-row: 8/10;
   border-radius: 5%;
-  background: yellow;
+  background: orange;
 }
 .cards #card2 {
   display: grid;
@@ -71,6 +72,7 @@
   grid-row: 1/4;
 }
 .cards #card2 h2 {
+  color: orange;
   grid-row: 5/6;
 }
 .cards #card2 p {
@@ -81,7 +83,7 @@
 .cards #card2 button {
   grid-row: 8/10;
   border-radius: 5%;
-  background: yellow;
+  background: orange;
 }
 .cards #card3 {
   display: grid;
@@ -102,6 +104,7 @@
   grid-row: 1/4;
 }
 .cards #card3 h2 {
+  color: orange;
   grid-row: 5/6;
 }
 .cards #card3 p {
@@ -112,7 +115,7 @@
 .cards #card3 button {
   grid-row: 8/10;
   border-radius: 5%;
-  background: yellow;
+  background: orange;
 }
 .cards #card4 {
   display: grid;
@@ -133,6 +136,7 @@
   grid-row: 1/4;
 }
 .cards #card4 h2 {
+  color: orange;
   grid-row: 5/6;
 }
 .cards #card4 p {
@@ -143,7 +147,7 @@
 .cards #card4 button {
   grid-row: 8/10;
   border-radius: 5%;
-  background: yellow;
+  background: orange;
 }
 
 .footer {
