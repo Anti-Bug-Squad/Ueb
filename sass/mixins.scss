@@ -1,7 +1,7 @@
 @mixin card{
     display: grid;
     grid-template-rows: repeat(9,1fr);
-    border: 5px green;
+    border: 4px green;
     border-radius: 5%;
     border-style: solid;
     height:25rem;
@@ -10,9 +10,12 @@
     text-align: center;
 
     img{
+        position: relative;
+        left:0.1px ;
+        top:0.1px;
         padding: 0px; 
         margin: 0px;
-        width: 18.1rem;
+        width: 18.4rem;
         border-radius: 5%;
         grid-row: 1/4;
     }
@@ -27,10 +30,31 @@
         border-radius: 5%;
         background: white;
     }
-    
-    button{
-        grid-row: 8/10;
-        border-radius: 5%;
-        background: #fa824c;
+
+    .cbut{
+        grid-row:8/10 ;
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+
+
+
+
+        .dbutton{
+            font-size: 1.1rem;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            border-radius: 10%;
+            background: #fa824c;
+        }
     }
+    
+    // button{
+    //     font-size:1.3rem;
+    //     font-weight: 600;
+    //     grid-row: 9/10;
+    //     border-radius: 10%;
+    //     background: #fa824c;
+    // }
 }

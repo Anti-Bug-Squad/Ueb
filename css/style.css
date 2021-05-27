@@ -14,7 +14,7 @@ body {
 }
 
 .nav {
-  background: black;
+  background: #222222;
   height: 10vh;
 }
 
@@ -48,7 +48,7 @@ body {
 .cards .c {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
-  border: 5px green;
+  border: 4px green;
   border-radius: 5%;
   border-style: solid;
   height: 25rem;
@@ -57,9 +57,12 @@ body {
   text-align: center;
 }
 .cards .c img {
+  position: relative;
+  left: 0.1px;
+  top: 0.1px;
   padding: 0px;
   margin: 0px;
-  width: 18.1rem;
+  width: 18.4rem;
   border-radius: 5%;
   grid-row: 1/4;
 }
@@ -72,9 +75,18 @@ body {
   border-radius: 5%;
   background: white;
 }
-.cards .c button {
+.cards .c .cbut {
   grid-row: 8/10;
-  border-radius: 5%;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+.cards .c .cbut .dbutton {
+  font-size: 1.1rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border-radius: 10%;
   background: #fa824c;
 }
 
@@ -83,6 +95,6 @@ body {
   left: 0;
   bottom: 0;
   width: 100vw;
-  background: gray;
+  background: #222222;
   height: 5vh;
 }
