@@ -12,19 +12,21 @@
     padding: 0px;
 
     img{
+        max-height: 100%;
         position: relative;
         left:-0.08rem;
         top:0.1px;
+        width: 18.21rem;
         padding: 0px; 
         margin: 0px;
-        width: 18.21rem;
         border-radius: 5%;
-        grid-row: 1/4;
+        grid-row: 1/5;
     }
 
     h2{
         color: #fa824c;
         grid-row: 5/6;
+        align-items: center;
     }
 
     p{
