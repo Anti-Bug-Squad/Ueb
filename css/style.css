@@ -10,7 +10,7 @@
 }
 
 body {
-  background: #fafffd;
+  background: #FAFFFD;
 }
 
 .nav {
@@ -48,6 +48,7 @@ body {
 .cards .c {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: 18rem;
   border: 4px green;
   border-radius: 5%;
   border-style: solid;
@@ -55,14 +56,15 @@ body {
   margin: 10px;
   justify-content: center;
   text-align: center;
+  padding: 0px;
 }
 .cards .c img {
   position: relative;
-  left: 0.1px;
+  left: -1.7px;
   top: 0.1px;
   padding: 0px;
   margin: 0px;
-  width: 18.4rem;
+  width: 18.21rem;
   border-radius: 5%;
   grid-row: 1/4;
 }
