@@ -101,6 +101,7 @@ h1 {
   grid-row: 2/3;
   border-radius: 10%;
   background: #fa824c;
+  box-shadow: 2px 2px black;
 }
 
 .footer {
