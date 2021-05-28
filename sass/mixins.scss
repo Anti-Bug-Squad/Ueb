@@ -54,6 +54,17 @@
             box-shadow: 2px 2px black;
         }
 
+        .dbutton:hover{
+            font-size: 1.1rem;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            border-radius: 10%;
+            background: #fa824c;
+            box-shadow: 2px 2px black;
+            cursor:pointer;
+        }
+
+
     }
     
 }
