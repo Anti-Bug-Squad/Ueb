@@ -78,7 +78,7 @@ h1 {
   display: grid;
   grid-template-rows: repeat(9, 1fr);
   grid-template-columns: 18rem;
-  border-width: 3px 3px 3px 3px;
+  border-width: 3px;
   border-image: linear-gradient(45deg, #0072ff 0%, #00d4ff 100%);
   border-image-slice: 9;
   border-style: solid;
@@ -92,10 +92,11 @@ h1 {
 }
 .cards .c img {
   height: 100%;
+  width: 102%;
   position: relative;
-  top: -0.1rem;
-  left: -0.3rem;
-  width: 18.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0px;
   margin: 0px;
   grid-row: 1/5;
