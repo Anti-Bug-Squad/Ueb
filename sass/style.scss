@@ -30,24 +30,38 @@ h1{
 
 }
 
-.boxes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 15vh;
-}
-
-.sub{
-    display: flex;
-    justify-content: space-around;
-    border: 1px solid black;
-    align-items: center;
-    border-radius: 20px;
-    width: 25%;
-    height: 70%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+	.boxes {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 50px;
+	}
+	.sub{
+		width: 200px;
+		height: 100px;
+		border-radius: 10px;
+	}
+	.sub:first-child{
+		background: linear-gradient(90deg, #daae51 0%, #d53369 100%);
+	}
+	.sub:nth-child(2){
+		background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+	}
+	.sub:last-child{
+		background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+	}
+	.text-block{
+		position: relative;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+		color: #fff;
+		font-size: 1em;
+		font-weight: 600;
+		font-family: 'Poppins', sans-serif;
+	}
 
 .cards{
 
@@ -58,6 +72,7 @@ h1{
     justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
+    
     .c{
         @include card;
     }

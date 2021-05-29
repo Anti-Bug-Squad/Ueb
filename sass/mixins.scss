@@ -2,9 +2,11 @@
     display: grid;
     grid-template-rows: repeat(9,1fr);
     grid-template-columns: 18rem;
-    border: 4px green;
-    border-radius: 5%;
+    border-width: 3px 3px 3px 3px;
+    border-image: linear-gradient(45deg, #0072ff 0%, #00d4ff 100%);
+    border-image-slice: 9;
     border-style: solid;
+    border-radius: 5%;
     height:25rem;
     margin: 10px;
     justify-content: center;
@@ -15,12 +17,11 @@
     img{
         height: 100%;
         position: relative;
-        left:-0.08rem;
-        top:0.1px;
-        width: 18.21rem;
+        top:-0.1rem;
+        left:-0.3rem;
+        width: 18.5rem;
         padding: 0px; 
         margin: 0px;
-        border-radius: 5%;
         grid-row: 1/5;
     }
 
@@ -46,21 +47,23 @@
 
 
         .dbutton{
+            padding: 5px;
             font-size: 1.1rem;
             grid-column: 2/3;
             grid-row: 2/3;
-            border-radius: 10%;
-            background: #fa824c;
+            border-radius: 2px;
+            background: linear-gradient(90deg,  #0072ff 0%, #00d4ff 100%);
             box-shadow: 2px 2px black;
         }
 
         .dbutton:hover{
+            padding: 5px;
             font-size: 1.1rem;
             grid-column: 2/3;
             grid-row: 2/3;
-            border-radius: 10%;
-            background: #fa824c;
-            box-shadow: 2px 2px black;
+            border-radius: 2px;
+            background: linear-gradient(90deg,  #0072ff 0%, #00d4ff 100%);
+            box-shadow: 0 3px 15px -3px #363636;
             cursor:pointer;
         }
 
