@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/4374fdeeb7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <form class="form">
+            <div class="form-title"><h1>Add New Question</h1></div>
+            <div class="input">
+                <label for="q-input" class="form-label"><span>Question</span></label>
+                <input name="q-input" class="form-input" type="text" placeholder="Enter question here">
+            </div>
+            <div class="op-input">
+                <div class="input">
+                    <label for="op-input-a" class="form-label"><span>Option A</span></label>
+                    <input name="op-input-a" class="form-input option" type="text" placeholder="Enter option A">
+                </div>
+                <div class="input">
+                    <label for="op-input-b" class="form-label"><span>Option B</span></label>
+                    <input name="op-input-b" class="form-input option" type="text" placeholder="Enter option B">
+                </div>
+                <div class="input">
+                    <label for="op-input-c" class="form-label"><span>Option C</span></label>
+                    <input name="op-input-c" class="form-input option" type="text" placeholder="Enter option C">
+                </div>
+                <div class="input">
+                    <label for="op-input-d" class="form-label"><span>Option D</span></label>
+                    <input name="op-input-d" class="form-input option" type="text" placeholder="Enter option D">
+                </div>                     
+            </div>
+            <div class="input">
+                <label for="ans-input" class="form-label"><span>Correct Answer</span></label>
+                <input name="ans-input" class="form-input" type="text" placeholder="Correct answer to the above question">
+            </div>
+            <div class="control">
+                <div class="cancel-reset">
+                    <div type="cancel" class="cancel btn"><i class="fas fa-ban"></i></div>
+                    <button type="reset" value="Reset" class="reset btn"><i class="fas fa-trash"></i>
+                </div>
+                    <button type="submit" value="Submit" class="submit btn"><i class="fas fa-check"></i><div></div>
+            </div>
+        </form>
+    </body>
+</html>
