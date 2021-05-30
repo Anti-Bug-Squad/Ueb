@@ -15,6 +15,10 @@ body {
 }
 
 /* .............. NAVIGATION      BAR..................*/
+.nav {
+  height: 10vh;
+  width: 100%;
+}
 .content{
   margin-left:  20px;
   min-width: 70px;
@@ -146,14 +150,18 @@ h1 {
   top: 2vh;
 }
 
+/*                       Boxes                                    */
 .boxes {
   display: flex;
+  flex-wrap: wrap;
+  height: auto;
   flex-direction: row;
   justify-content: space-evenly;
   margin: 50px;
 }
 
 .sub {
+  margin: 1rem;
   width: 200px;
   height: 100px;
   border-radius: 10px;
@@ -183,6 +191,10 @@ h1 {
   font-family: "Poppins", sans-serif;
 }
 
+/*                           /Boxes                                 */
+
+
+/*                           /Cards                                 */
 .cards {
   height: auto;
   display: grid;
@@ -242,7 +254,7 @@ h1 {
   grid-row: 2/3;
   border-radius: 2px;
   background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
-  box-shadow: 2px 2px black;
+  box-shadow: 0 3px 15px -3px #363636;
 }
 .cards .c .cbut .dbutton:hover {
   padding: 5px;
@@ -255,11 +267,20 @@ h1 {
   cursor: pointer;
 }
 
+/*                            /Cards                                  */
+
+/*                            Footer                                  */
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
   background: #222222;
   height: 5vh;
 }
+.fp{
+  margin-left: 5px;
+}
+/*                            /Footer                                 */
