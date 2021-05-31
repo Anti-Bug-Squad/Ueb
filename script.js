@@ -33,7 +33,7 @@ function search(){
 
 function content(){
     s=1;
-    if (window.matchMedia("(max-width:700px)").matches) {
+    if (window.matchMedia("(max-width:992px)").matches) {
         p=0;
         document.getElementById("profileNav").style.visibility = "hidden";
         document.getElementById("profileNav").style.opacity = "0";
@@ -54,7 +54,7 @@ function content(){
 }
 function profile(){
     s=1;
-    if (window.matchMedia("(max-width:700px)").matches) {
+    if (window.matchMedia("(max-width:992px)").matches) {
         c=0;
         document.getElementById("contentNav").style.visibility = "hidden";
         document.getElementById("contentNav").style.opacity = "0";
