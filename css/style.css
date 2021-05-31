@@ -15,130 +15,200 @@ body {
 }
 
 /* .............. NAVIGATION      BAR..................*/
-.nav {
-  height: 10vh;
+nav{
+  position: sticky;
+  top:0;
+  z-index: 10;
+
+  font-family: 'Poppins',sans-serif;
+
+  height: 60px;
   width: 100%;
+
+  display: flex;
+
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  box-shadow: 0px 1px 10px rgba(64, 224, 208, 0.678);
 }
-.content{
-  margin-left:  20px;
-  min-width: 70px;
+nav a{
+  text-decoration: none;
 }
-.opti{
+#logo{
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.listnav{
+  display: flex;
+  justify-content: center;
+}
+.optnav{
   font-size: 20px;
   font-weight: 200;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+
+  height: 100%;
+  padding: 0px 20px;
+
+  color: #ffffff;
   cursor:default;
-  color: white;
 }
-nav{
-  color:black;
-  position: fixed;
-  top:0;
-  left:0;
+.optnav i{
+  width: 0px;
+  display: none;
+}
+nav ul{
+  position: absolute;
+  top: 60px;
   z-index: 10;
-  width: 100%;
-  font-family: 'Poppins',sans-serif;
-  margin:0;
+
+  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  box-shadow: 0px 0px 5px black;
   background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 100%);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
 }
 nav li{
   list-style: none;
+  
+  text-align: center;
+  padding: 15px 10px;
+  min-width: 130px;
+
+  border-top: 1px solid rgba(99, 99, 99, 0.658);
+  
+  cursor: pointer;
 }
-nav ul{
-  top:10%;
-  position: relative;
-  visibility: hidden;
-  z-index: 10;
-  transition: 0.3s ease-in-out;
-  margin: 0;
-  padding: 0;
-}
-.NavMenu{
-  display: flex;
-  height:10vh;
-}
-.logo{
+nav li a{
+  color:#ffffff;
   font-size: 20px;
-  color: white;
-  font-weight: 200;
-  width:max-content;
-  align-self: center;
-  padding-left: 32px;
 }
+/*------------------------Nav search form--------------------*/
 nav form{
-  background-color:white;
-  border-radius: 30px;
+  display: flex;
+  
   margin-right: 15px;
   height: 60%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav input{
-  border: transparent;
   border-radius: 30px;
 
-  padding-left: 5px;
+  background-color:#ffffff;
+}
+nav input{
+  padding-left: 8px;
+  width: 100%;
+
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 
   font-size: 20px;
 
   outline: none;
-
 }
 nav button{
-  background-color: transparent;
   border: transparent;
-  padding: 0px 5px;
+  background-color: transparent;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+  padding: 0px 8px;
 
   color: rgb(78, 78, 78);
 }
-nav button i{
-  color:rgb(78, 78, 78);
-  font-size: 80%;
+#search{
+  width: 100%;
+  display: block;
 }
-nav button:hover i{
-  color: cyan;
+/*----------------------Nav hover effects-------------------*/
+.listnav:hover .optnav{
+  background-color: rgb(51, 51, 51);
+  color: rgb(183, 183, 253);
+
+  transition: 0.2s ease-in-out;
 }
-.content .opti:hover{
-  color: cyan;
-}
-.content:hover ul{
-  top:0%;
-  transition: 0.3s ease-in-out;
+.listnav:hover ul{
+  opacity: 1;
   visibility: visible;
+
+  transition: 0.3s ease-in-out;
 }
-.content li:hover{
+.listnav li:hover{
   color:whitesmoke;
   background-color: #fde74c;
   background-image: linear-gradient(319deg, #fde74c 0%, #32ff7a 37%, #2fcbe0 100%);
-
 }
-.content li:hover a{
+.listnav li:hover a{
   color:black;
 }
-.content ul li{
-  padding: 12px;
-  cursor: pointer;
-}
-.content ul li a{
-  color:white;
-  text-decoration: none;
-}
-nav i{
-  color:white;
-}
-.content ul{
-  background-color: #2d3436;
-  background-image: linear-gradient(315deg, #2d3436 0%, #000000 100%);
+
+/*---------------------------max-width 992px   --------------------------*/
+@media (max-width:992px) {
+  nav{
+    padding: 5px 0px;
+    
+    justify-content: space-around;
+    align-items: center;
+  }
+  #logo{
+    flex-grow: 0;
+  }
+  nav form{
+    position: absolute;
+    
+    top: 70px;
+    left: 0px;
+    width: 100%;
+
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+
+    box-shadow: 0px 0px 5px black;
+    box-sizing: border-box;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.1s ease-in-out;
+  }
+  .optnav{
+    padding: 5px;
+    text-align: center;
+
+    width: 41px;
+    height: 41px;
+
+    border-radius: 100px;  
+    background-color: #aff6cf;
+    background-image: linear-gradient(315deg, #aff6cf 0%, #9f98e8 74%);
+  }
+  .optnav p{
+    display: none;
+  }
+  .optnav i{
+    width: 100%;
+
+    display: block;
+    color: black;
+  }
+  nav ul{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+  }
+  nav li{
+    font-size: 25px;
+  }
 }
 /*................. NAVIGATION      BAR      ENDS................*/
 
