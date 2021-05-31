@@ -11,45 +11,51 @@
 </head>
 <body>
     <!--Nav-->
-    <div class="nav">
-            <nav>
-                <div class="logo">LOGO</div>
-                <div class="NavMenu">
-                    <div class="content">
-                        <div class="opti">Home</i></div>
-                    </div>
-                    <div class="content">
-                        <div class="opti">Content</div>
-                        <ul>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="content">
-                        <div class="opti">Profile</div>
-                        <ul>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                            <li><a href="#">Content 1</a></li>
-                        </ul>
-                    </div>
-                <div class="content">
-                    <div class="opti">
-                        <form action="">
-                        <input type="text" placeholder="Search">
-                        <button type="submit"><i class="fa fa-search fa-2x"></i></button>
-                    </form></div>
-                    </div>
+    <nav>
+        <div id="logo">
+            <a href="">
+                <div class="optnav"><p>Logo</p><i class="fa fa-bandcamp fa-2x"></i></div>
+            </a>
+        </div>
 
+        <div class="listnav">
+            <a href="">
+                <div class="optnav"><p>Home</p><i class="fa fa-home fa-2x"></i></div>
+            </a>
+        </div>
 
-                </div>
-                
-        </nav>
-    </div>
+        <div class="listnav">
+            <div class="optnav" onclick="content()"><p>Information &#9660;</p><i class="fa fa-info-circle fa-2x"></i></div>
+
+            <ul id="contentNav">
+                <li><a href="#">Content 1 Content 2 Content 3 Content 4</a></li>
+                <li><a href="#">Content 2</a></li>
+                <li><a href="#">Content 3</a></li>
+                <li><a href="#">Content 4</a></li>
+            </ul>
+        </div>
+        
+        <div class="listnav">
+            <div class="optnav" onclick="profile()"><p>Profile &#9660;</p><i class="fa fa-user fa-2x"></i></div>
+
+            <ul id="profileNav">
+                <li><a href="#">Acount</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </div>
+
+       <div class="listnav">
+           <div class="optnav">
+               <button onclick="search()"><i class="fa fa-search fa-2x"></i></button>
+
+               <form id="formnav" action="">
+               <input type="text" placeholder="Search...">
+
+               <button type="submit"><i id="search" class="fa fa-search fa-2x"></i></button>
+               </form>
+           </div>
+        </div>   
+   </nav>
     <!--/Nav-->
 
 
